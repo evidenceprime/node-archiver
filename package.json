@@ -1,18 +1,18 @@
 {
-  "name": "archiver",
-  "version": "7.0.1",
+  "name": "@evidenceprime/archiver",
+  "version": "7.0.2",
   "description": "a streaming interface for archive generation",
-  "homepage": "https://github.com/archiverjs/node-archiver",
+  "homepage": "https://github.com/evidenceprime/node-archiver",
   "author": {
     "name": "Chris Talkington",
     "url": "http://christalkington.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/archiverjs/node-archiver.git"
+    "url": "https://github.com/evidenceprime/node-archiver.git"
   },
   "bugs": {
-    "url": "https://github.com/archiverjs/node-archiver/issues"
+    "url": "https://github.com/evidenceprime/node-archiver/issues"
   },
   "license": "MIT",
   "type": "module",
@@ -58,8 +58,5 @@
     "zip",
     "tar"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "packageManager": "yarn@4.10.3"
 }
