@@ -25,6 +25,7 @@
     "node": ">=18"
   },
   "scripts": {
+    "build": "echo 'No build step required.'",
     "test": "mocha --reporter dot",
     "bench": "node benchmark/simple/pack-zip.js"
   },
