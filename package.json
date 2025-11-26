@@ -27,7 +27,8 @@
   "scripts": {
     "build": "echo 'No build step required.'",
     "test": "mocha --reporter dot",
-    "bench": "node benchmark/simple/pack-zip.js"
+    "bench": "node benchmark/simple/pack-zip.js",
+    "release": "npm run build && npm publish"
   },
   "dependencies": {
     "async": "3.2.6",
