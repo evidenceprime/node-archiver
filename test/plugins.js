@@ -5,10 +5,10 @@ import {
   unlinkSync,
   writeFileSync,
   WriteStream,
-} from "fs";
+} from "node:fs";
 import { assert } from "chai";
 import { mkdirp } from "mkdirp";
-import tar from "tar";
+import * as tar from "tar";
 import yauzl from "yauzl";
 import { TarArchive, ZipArchive } from "../index.js";
 import { binaryBuffer } from "./helpers/index.js";
@@ -47,7 +47,7 @@ describe("plugins", function () {
     var entries = {};
     before(function (done) {
       archive = new TarArchive();
-      var testStream = new tar.Parse();
+      var testStream = new tar.Parser();
       testStream.on("entry", function (entry) {
         actual.push(entry.path);
         entries[entry.path] = {
