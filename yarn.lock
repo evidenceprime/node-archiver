@@ -151,7 +151,7 @@ __metadata:
     buffer-crc32: "npm:1.0.0"
     chai: "npm:6.2.1"
     is-stream: "npm:4.0.1"
-    jsdoc: "npm:4.0.4"
+    jsdoc: "npm:4.0.5"
     lazystream: "npm:1.0.1"
     mkdirp: "npm:3.0.1"
     mocha: "npm:11.7.5"
@@ -678,9 +678,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsdoc@npm:4.0.4":
-  version: 4.0.4
-  resolution: "jsdoc@npm:4.0.4"
+"jsdoc@npm:4.0.5":
+  version: 4.0.5
+  resolution: "jsdoc@npm:4.0.5"
   dependencies:
     "@babel/parser": "npm:^7.20.15"
     "@jsdoc/salty": "npm:^0.2.1"
@@ -698,8 +698,8 @@ __metadata:
     strip-json-comments: "npm:^3.1.0"
     underscore: "npm:~1.13.2"
   bin:
-    jsdoc: ./jsdoc.js
-  checksum: 10c0/437a21ad67629dd9ae63d99b3d8f7c87e2a54559a15744cbdafe55ad6abd19678845e79dc88119035a31eef13a2ecaf1d623989a8b9631060780dcdfdf87c7a3
+    jsdoc: jsdoc.js
+  checksum: 10c0/8192c234f60c58ee67342eb0532f66118849a921df9486fe15132c9228badb5e1bc7d10233b0821e661ab02e94c045f4cb8c110f6264620aae9b73bee84e1cc5
   languageName: node
   linkType: hard
 
