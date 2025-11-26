@@ -4,7 +4,11 @@ module.exports = {
   url: "https://www.archiverjs.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    }
+  },
   favicon: "img/favicon.ico",
   organizationName: "archiverjs",
   projectName: "node-archiver",
