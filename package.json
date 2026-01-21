@@ -1,6 +1,6 @@
 {
   "name": "@evidenceprime/archiver",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "a streaming interface for archive generation",
   "homepage": "https://github.com/evidenceprime/node-archiver",
   "author": {
