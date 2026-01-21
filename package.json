@@ -50,7 +50,7 @@
     "mocha": "11.7.5",
     "rimraf": "6.1.2",
     "stream-bench": "0.1.2",
-    "tar": "7.5.2",
+    "tar": "7.5.6",
     "yauzl": "3.2.0"
   },
   "keywords": [
