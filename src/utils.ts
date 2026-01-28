@@ -30,17 +30,13 @@ export function collectStream(
 }
 
 export function dateify(dateish?: string | Date | null): Date {
-  let result: Date;
-
   if (dateish instanceof Date) {
-    result = dateish;
+    return dateish;
   } else if (typeof dateish === 'string') {
-    result = new Date(dateish);
+    return new Date(dateish);
   } else {
-    result = new Date();
+    return new Date();
   }
-
-  return result;
 }
 
 export function normalizeInputSource(source: any): Buffer | NodeJS.ReadableStream {
