@@ -2,27 +2,22 @@ import {
   WriteStream,
   chmodSync,
   createReadStream,
-  createWriteStream,
   statSync,
   symlinkSync,
   unlinkSync,
   writeFileSync,
 } from "fs";
-import { PassThrough } from "readable-stream";
 import { Readable } from "readable-stream";
 import { assert } from "chai";
 import { mkdirp } from "mkdirp";
 import {
   binaryBuffer,
   readJSON,
-  UnBufferedStream,
-  WriteHashStream,
 } from "./helpers/index.js";
-import { JsonArchive } from "../index.js";
+import { JsonArchive } from "../dist/index.js";
 
 var testBuffer = binaryBuffer(1024 * 16);
 var testDate = new Date("Jan 03 2013 14:26:38 GMT");
-var testDate2 = new Date("Feb 10 2013 10:24:42 GMT");
 var win32 = process.platform === "win32";
 
 describe("archiver", function () {

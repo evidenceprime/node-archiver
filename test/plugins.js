@@ -10,7 +10,7 @@ import { assert } from "chai";
 import { mkdirp } from "mkdirp";
 import * as tar from "tar";
 import yauzl from "yauzl";
-import { TarArchive, ZipArchive } from "../index.js";
+import { TarArchive, ZipArchive } from "../dist/index.js";
 import { binaryBuffer } from "./helpers/index.js";
 
 const testBuffer = binaryBuffer(1024 * 16);
