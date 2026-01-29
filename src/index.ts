@@ -1,14 +1,14 @@
-import Archiver from "./lib/core.js";
-import Json from "./lib/plugins/json.js";
-import Tar from "./lib/plugins/tar.js";
-import Zip from "./lib/plugins/zip.js";
+import Archiver from './core.js';
+import Json from './plugins/json.js';
+import Tar from './plugins/tar.js';
+import Zip from './plugins/zip.js';
 
 export { Archiver };
 
 export class ZipArchive extends Archiver {
-  constructor(options) {
+  constructor(options?: any) {
     super(options);
-    this._format = "zip";
+    this._format = 'zip';
     this._module = new Zip(options);
     this._supportsDirectory = true;
     this._supportsSymlink = true;
@@ -17,9 +17,9 @@ export class ZipArchive extends Archiver {
 }
 
 export class TarArchive extends Archiver {
-  constructor(options) {
+  constructor(options?: any) {
     super(options);
-    this._format = "tar";
+    this._format = 'tar';
     this._module = new Tar(options);
     this._supportsDirectory = true;
     this._supportsSymlink = true;
@@ -28,9 +28,9 @@ export class TarArchive extends Archiver {
 }
 
 export class JsonArchive extends Archiver {
-  constructor(options) {
+  constructor(options?: any) {
     super(options);
-    this._format = "json";
+    this._format = 'json';
     this._module = new Json(options);
     this._supportsDirectory = true;
     this._supportsSymlink = true;
