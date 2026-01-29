@@ -1,18 +1,16 @@
-var fs = require("fs");
+import fs from "fs";
 
-var mkdir = require("mkdirp");
-var streamBench = require("stream-bench");
+import { mkdirpSync } from "mkdirp";
+import streamBench from "stream-bench";
 
-var archiver = require("../../");
-var common = require("../common");
+import { ZipArchive } from "../../dist/index.js";
+import { binaryBuffer } from "../common.js";
 
-var binaryBuffer = common.binaryBuffer;
+const BITS_IN_BYTE = 1024;
+const BITS_IN_MBYTE = BITS_IN_BYTE * 1024;
 
-var BITS_IN_BYTE = 1024;
-var BITS_IN_MBYTE = BITS_IN_BYTE * 1024;
-
-var file = false;
-var level = 1;
+let file = false;
+let level = 1;
 
 if (process.argv[2]) {
   if (isNaN(parseInt(process.argv[2], 10))) {
@@ -30,14 +28,14 @@ if (process.argv[2]) {
   }
 }
 
-var archive = archiver("zip", {
+var archive = new ZipArchive({
   zlib: {
     level: level,
   },
 });
 
 if (file === false) {
-  mkdir.sync("tmp");
+  mkdirpSync("tmp");
 
   file = "tmp/20mb.dat";
   fs.writeFileSync(file, binaryBuffer(BITS_IN_MBYTE * 20));
