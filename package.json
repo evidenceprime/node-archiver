@@ -53,7 +53,7 @@
     "mocha": "11.7.5",
     "rimraf": "6.1.2",
     "stream-bench": "0.1.2",
-    "tar": "7.5.7",
+    "tar": "7.5.11",
     "typescript": "5.9.3",
     "yauzl": "3.2.0"
   },
